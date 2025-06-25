@@ -11,7 +11,7 @@ This project showcases my skills in web development, design, and creativity. Bui
 - Contact & social media links included
 
 ## 🌐 Live Preview
-[Click here to view the live portfolio](https://bhawna-bhadana.github.io/portfolio)
+[Click here to view the live portfolio](http://127.0.0.1:5500/index.html).
 
 ## 🛠️ Tech Stack
 - HTML5
