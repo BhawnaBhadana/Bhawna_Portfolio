@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhawna Bhadana | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background: #1e1e80;
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .download-btn {
+      background: white;
+      color: #1e1e80;
+      border: 2px solid #1e1e80;
+      padding: 8px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+      background: #e8e8e8;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .typing {
+      overflow: hidden;
+      border-right: 3px solid #1e1e80;
+      white-space: nowrap;
+      animation: typing 3.5s steps(40, end), blink .75s step-end infinite;
+      font-size: 36px;
+      width: 0;
+      color: #1e1e80;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .hero-text button {
+      padding: 10px 20px;
+      border: none;
+      background: #1e1e80;
+      color: white;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .hero img {
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    section {
+      padding: 50px;
+      background: white;
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #1e1e80;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skill-icon {
+      font-size: 40px;
+      color: #1e1e80;
+    }
+
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #f8f8f8;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card .card-content {
+      padding: 15px;
+    }
+
+    .project-card h4 {
+      margin-bottom: 10px;
+      color: #1e1e80;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .project-card a {
+      color: #1e1e80;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e1e80;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bhawna</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://github.com/BhawnaBhadana" class="download-btn" target="_blank">GitHub</a>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2 class="typing">I'm Bhawna Bhadana</h2>
+      <p>Aspiring Full-Stack Web Developer & AI Enthusiast</p>
+      <button onclick="location.href='mailto:bhawnabhadana89@gmail.com'">Contact Me</button>
+    </div>
+  
+ 
+  </section>
+
+  <section id="about">
+    <h3 class="section-title">About Me</h3>
+    <p>I’m currently pursuing BS (Hons.) in Computer Applications at DSEU. Passionate about front-end development, design, and building user-focused digital products. I’m exploring the intersection of web and AI to craft intelligent, accessible solutions.</p>
+  </section>
+
+  <section id="skills">
+    <h3 class="section-title">My Skills</h3>
+    <div class="skills">
+      <i class="fab fa-html5 skill-icon" title="HTML5"></i>
+      <i class="fab fa-css3-alt skill-icon" title="CSS3"></i>
+      <i class="fab fa-js skill-icon" title="JavaScript"></i>
+      <i class="fas fa-pencil-ruler skill-icon" title="Figma"></i>
+      <i class="fas fa-palette skill-icon" title="Canva"></i>
+   <i class="fab fa-github skill-icon" title="GitHub"></i>
+
+    </div>
+  </section>
+
+  <section id="projects">
+  <h3 class="section-title">My Projects</h3>
+  <div class="project-gallery">
+    <div class="project-card">
+      <div class="card-content">
+        <h4>Grace Era</h4>
+        <p>A classy vintage women's fashion website with wishlist, cart, filters, and zoom feature.</p>
+        <a href="https://github.com/bhawna-bhadana/grace-era" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="card-content">
+        <h4>MindMood</h4>
+        <p>A mood tracker with avatars, analytics dashboard, calendar, and reminders.</p>
+        <a href="https://github.com/bhawna-bhadana/mindmood" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="card-content">
+        <h4>CraveCrash</h4>
+        <p>Web3 habit-breaking app rewarding consistency with tokens via smart contracts.</p>
+        <a href="https://github.com/bhawna-bhadana/cravecrash" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="card-content">
+        <h4>To Do List</h4>
+        <p>Where tasks live, complete, and disappear — all in one minimalist interface.</p>
+        <a href="https://github.com/BhawnaBhadana/To-Do-List" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </div> 
+</section>
+
+
+  </section>
+
+
+  <footer id="contact">
+    <p>📧 Email: <a href="mailto:bhawnabhadana89@gmail.com" style="color:white;">bhawnabhadana89@gmail.com</a> |
+      🔗 LinkedIn: <a href="https://www.linkedin.com/in/bhawna-bhadana" style="color:white;" target="_blank">bhawna-bhadana</a></p>
+    <p>&copy; 2025 Bhawna Bhadana. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+ 
